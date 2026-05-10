@@ -624,7 +624,7 @@ async function sendMessage() {
 
     typing.remove();
 
-    if (!response.ok) {
+    if (!res.ok) {
       const err = await res.json();
       if (res.status === 401) {
         localStorage.removeItem(API_KEY_STORAGE);
